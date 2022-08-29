@@ -373,16 +373,8 @@ class Home extends StatelessWidget {
   }
 
   Row _buildStar() {
-    final List<Color> color = [
-      Colors.amber,
-      Colors.amber,
-      Colors.amber,
-      Colors.amber,
-      Colors.grey.withOpacity(0.3),
-    ];
-
     return Row(
-      children: color.map((e) {
+      children: starColor.map((e) {
         return Icon(
           Icons.star,
           size: 15,
